@@ -27,3 +27,9 @@ While most of the inheritance is fine, it also inherits unwanted elements like `
 To prevent this, the project POM contains empty overrides for these elements.
 If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
+### My note
+To configure our API service/ micro service in eureka distrubuted server we need to follow below instructions
+1. In application properties we need to configure eureka server details 
+eureka.client.serviceUrl.defaultZone = http://localhost:8011/eureka
+
+2. configure spring boot application class as "@EnableDiscoveryClient"
